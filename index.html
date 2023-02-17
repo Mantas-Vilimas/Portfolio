@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mantas Vilimas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script type="module" src="./script/main.js" defer></script>
+    <script src="./script/lightdark.js" defer></script>
+  </head>
+  <body>
+    <header class="background-color">
+      <nav class="navbar layout">
+        <div class="navbar-logo-container">
+          <a href="#" class="navbar-logo"></a>
+        </div>
+        <div class="desktop-menu">
+          <ul class="navbar-menu">
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#social">Social</a></li>
+            <li class="message-link"><a href="#">Contact Me</a></li>
+            <li>
+              <label class="switch">
+                <input type="checkbox" id="desktop-toggle" />
+                <span class="slider round"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="burger-button">
+          <div class="burger-icon"></div>
+        </div>
+      </nav>
+      <ul id="burger-links" class="navbar-menu burger-list">
+        <li>
+          <label class="switch">
+            <input type="checkbox" id="mobile-toggle" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Social</a></li>
+        <li class="message-link"><a href="#">Contact Me</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="hero wrapper">
+        <div class="hero-body">
+          <h1>Front End developer</h1>
+          <p>I code beautifully simple things and love what I do</p>
+        </div>
+        <div class="hero-footer">
+          <object
+            data="/images/hero-light-animated.svg"
+            type="image/svg+xml"
+            id="hero-image-object"
+          >
+            <!-- Nedded for Falback use on every svg -->
+            <img
+              src="./images/hero-light-animated-png.png"
+              alt="hero-image"
+              id="hero-image"
+            />
+          </object>
+        </div>
+      </section>
+      <section id="about-me" class="about-me">
+        <div class="layout wrapper">
+          <div class="about-content">
+            <h2>Hi I'm Mantas. Nice to meet you.</h2>
+            <p>
+              Since beginning my journey as a freelance designer over 11 years
+              ago, I've done remote work for agencies, consulted for startups,
+              and collaborated with talented people to create digital products
+              for both business and consumer use. I'm quietly confident,
+              naturally curious, and perpetually working on improving my chops
+              one design problem at a time.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <div class="layout wrapper">
+          <div class="skills-container">
+            <div class="skills-card design">
+              <div class="card-logo"></div>
+              <div>
+                <span class="skill-text"
+                  >I value simple content structure, clean design patterns, and
+                  thoughtful interactions.</span
+                >
+              </div>
+              <div>
+                <h3>Things I enjoy</h3>
+                <p>CSS, Bootstrap, Sass UX, UI</p>
+              </div>
+              <div>
+                <h3>Design tools</h3>
+                <ul>
+                  <li>Figma</li>
+                  <li>Font Awesome</li>
+                  <li>Pen & Paper</li>
+                  <li>Sketch</li>
+                  <li>Adobe Photoshop</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-card developer">
+              <div class="card-logo"></div>
+              <div>
+                <span class="skill-text"
+                  >I like to code things from scratch, and enjoy bringing ideas
+                  to life in the browser.</span
+                >
+              </div>
+              <div>
+                <h3>Things I enjoy</h3>
+                <p>CSS, Bootstrap, Sass UX, UI</p>
+              </div>
+              <div>
+                <h3>Design tools</h3>
+                <ul>
+                  <li>Figma</li>
+                  <li>Font Awesome</li>
+                  <li>Pen & Paper</li>
+                  <li>Sketch</li>
+                  <li>Adobe Photoshop</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skills-card personal">
+              <div class="card-logo"></div>
+              <div>
+                <span class="skill-text"
+                  >I genuinely care about people, and love helping fellow
+                  designers work on their craft.</span
+                >
+              </div>
+              <div>
+                <h3>Things I enjoy</h3>
+                <p>CSS, Bootstrap, Sass UX, UI</p>
+              </div>
+              <div>
+                <h3>Design tools</h3>
+                <ul>
+                  <li>Figma</li>
+                  <li>Font Awesome</li>
+                  <li>Pen & Paper</li>
+                  <li>Sketch</li>
+                  <li>Adobe Photoshop</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <div class="layout wrapper">
+          <h2 class="projects-heading">My recent projects</h2>
+          <p class="projects-text">
+            Here are a few past projects I've worked on. Want to see more?
+            <a href="#">Email me.</a>
+          </p>
+          <div class="projects-container">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./images/projects//project1.jpg" alt="project" />
+              </div>
+              <div class="project-content">
+                <p>some text about project-card</p>
+                <div class="project-link-container">
+                  <a href="#">Visit Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./images/projects//project2.jpg" alt="project" />
+              </div>
+              <div class="project-content">
+                <p>some text about project-card</p>
+                <div class="project-link-container">
+                  <a href="#">Visit Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./images/projects//project3.jpg" alt="project" />
+              </div>
+              <div class="project-content">
+                <p>some text about project-card</p>
+                <div class="project-link-container">
+                  <a href="#">Visit Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./images/projects//project4.jpg" alt="project" />
+              </div>
+              <div class="project-content">
+                <p>some text about project-card</p>
+                <div class="project-link-container">
+                  <a href="#">Visit Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./images/projects//project5.jpg" alt="project" />
+              </div>
+              <div class="project-content">
+                <p>some text about project-card</p>
+                <div class="project-link-container">
+                  <a href="#">Visit Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./images/projects//project6.jpg" alt="project" />
+              </div>
+              <div class="project-content">
+                <p>some text about project-card</p>
+                <div class="project-link-container">
+                  <a href="#">Visit Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="see-more-button">
+            <a href="#"
+              >See more on GitHub
+              <span class="git-icon"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="social" class="call-to-action">
+        <div class="layout wrapper">
+          <div class="contact-container">
+            <div class="contact-header"><p>Start a poject</p></div>
+            <div class="contact-text">
+              <p>
+                Interested in working together? We should queue up a time to
+                chat. I’ll buy the coffee.
+              </p>
+            </div>
+            <div class="contact-button">
+              <a href="#"><span class="contact-icon"></span> Let's contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="layout wrapper">
+        <div class="footer-content">
+          <div class="footer-logo-container">
+            <a href="#" class="footer-logo"></a>
+          </div>
+          <div class="moto">
+            Living, learning, & leveling up one day at a time.
+          </div>
+
+          <ul class="contacts-list">
+            <li>
+              <a href="#"><span class="logo facebook-logo"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="logo linkedin-logo"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="logo github-logo"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="logo email-logo"></span></a>
+            </li>
+          </ul>
+
+          <p class="copyright">Handcrafted by me &copy; twentytwotwentythree</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

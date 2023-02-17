@@ -1,0 +1,53 @@
+:root {
+--secondary-color: #6ed3cf;
+--primary-color: #9068be;
+--tasty-eighties-grey: #e2eaf2;
+--font-color: #0d1019; 
+--background-color: #fafafa;
+--card-color: rgb(20, 28, 58);
+--card-border: 1px solid $tasty-eighties-grey;
+
+}
+
+[data-theme="dark"] {
+    --primary-color: #6ed3cf;
+    --secondary-color: #9068be;
+    --tasty-eighties-grey: #e2eaf2;
+    --background-color: #0d1019;
+    --font-color: #fafafa;
+    --card-color: #e2eaf2;
+    --card-border: 1px solid $tasty-eighties-grey;
+}
+
+
+
+
+@import "navbar";
+@import "burger";
+@import "hero";
+@import "about";
+@import "skills";
+@import "projects";
+@import "contact";
+@import "footer";
+@import "toggle";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.layout {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    padding: 0 20px;
+}

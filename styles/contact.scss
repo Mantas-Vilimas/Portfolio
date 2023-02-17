@@ -1,0 +1,80 @@
+
+.contact-container {
+
+    margin-top: -175px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--card-color);
+    padding: 56px 60px;
+    border-radius: 8px;
+    color: var(--background-color);
+}
+
+.contact-header,
+.contact-text,
+.contact-button {
+    flex:1
+}
+
+.contact-header p {
+    font-size: 32px;
+}
+
+.contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-button a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 3px solid var(--secondary-color);
+    color: var(--background-color);
+    border-radius: 50px;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.contact-icon {
+    display: inline-block;
+    mask: url(/assets/envelope-regular.svg) no-repeat / contain ;
+    -webkit-mask: url(/assets/envelope-regular.svg) no-repeat center / contain ;
+    background-color: var(--secondary-color);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-button a:hover {
+    background-color: var(--secondary-color);
+    color: var(--card-color); 
+    .contact-icon {
+        background-color: var(--card-color);
+    }
+}
+
+
+@media screen and (min-width: 320px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-text {
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .contact-container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  
+}

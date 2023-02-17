@@ -1,0 +1,171 @@
+.projects {
+    h2, p {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 20px;
+        a{
+            text-decoration: none;
+        }
+    }
+
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    position: relative;
+    background-color: var(--card-color);
+    border-radius: 8px;
+    min-height: 250px;
+    min-width: 300px;
+    width: calc(100% / 3 - calc(28px / 2));
+    overflow: hidden;
+}
+
+.project-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: var(--background-color);
+}
+
+
+.project-card:hover {
+    .project-image{
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    .project-content {
+        opacity: 1;
+    }
+
+}
+
+
+.project-image img {
+    object-fit: cover;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.project-link-container,
+.see-more-button a {
+    border: 3px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 12px;
+}
+
+.project-link-container a {
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+.project-link-container:hover {
+    background-color: var(--primary-color);
+}
+
+.see-more-button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.see-more-button a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.see-more-button a:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    .git-icon {
+        background-color: var(--background-color);
+    }
+}
+
+.git-icon {
+    mask: url(/assets/github.svg) no-repeat / contain ;
+    -webkit-mask: url(/assets/github.svg) no-repeat center / contain ;
+    background-color: var(--primary-color);
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-content p,
+.project-link-container a,
+.contact-button a {
+    color: var(--background-color)
+}
+.projects-text,
+.projects-heading,
+.see-more-button a {
+    color: var(--font-color);
+}
+
+
+.projects-text a {
+    color: var(--primary-color);
+}
+
+
+
+
+@media screen and (min-width: 320px) {
+    .project-card {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .project-card {
+        width: calc(100% / 2 - calc(20px / 2));
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .project-card{
+          width: calc(100% / 3 - calc(28px / 2)); 
+    }
+ 
+}
