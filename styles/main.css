@@ -480,11 +480,15 @@ h1 {
   color: var(--background-color);
 }
 
-.project-card:hover .project-image {
+.project-card:hover .project-image,
+.project-card:active .project-image,
+.project-card:focus .project-image {
   opacity: 0;
   transform: scale(1.1);
 }
-.project-card:hover .project-content {
+.project-card:hover .project-content,
+.project-card:active .project-content,
+.project-card:focus .project-content {
   opacity: 1;
 }
 

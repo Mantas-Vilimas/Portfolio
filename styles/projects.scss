@@ -61,7 +61,9 @@
 }
 
 
-.project-card:hover {
+.project-card:hover,
+.project-card:active,
+.project-card:focus {
     .project-image{
         opacity: 0;
         transform: scale(1.1);
