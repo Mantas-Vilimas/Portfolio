@@ -247,6 +247,7 @@ h1 {
   }
   .hero-footer object {
     max-height: 650px;
+    min-width: 250px;
     max-width: 80vw;
   }
 }
@@ -256,6 +257,7 @@ h1 {
   }
   .hero-footer object {
     max-height: 650px;
+    min-width: 250px;
     max-width: 80vw;
   }
 }
@@ -265,6 +267,7 @@ h1 {
   }
   .hero-footer object {
     max-height: 60vh;
+    min-width: 250px;
     max-width: 80vw;
   }
 }
