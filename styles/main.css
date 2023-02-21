@@ -492,6 +492,16 @@ h1 {
   opacity: 1;
 }
 
+.project-image:active .project-image,
+.project-image:focus .project-image {
+  opacity: 0;
+  transform: scale(1.1);
+}
+.project-image:active .project-content,
+.project-image:focus .project-content {
+  opacity: 1;
+}
+
 .project-image img {
   object-fit: cover;
   border-radius: 8px;
