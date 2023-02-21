@@ -60,10 +60,8 @@
     color: var(--background-color);
 }
 
-
-.project-card:hover,
-.project-card:active,
-.project-card:focus {
+//Turi buti mobile friendly kazkaip. gal visa linka i anchor tag ideti tada bus clickable.
+.project-card:hover {
     .project-image{
         opacity: 0;
         transform: scale(1.1);
@@ -74,16 +72,6 @@
 
 }
 
-.project-image:active,
-.project-image:focus {
-    .project-image{
-        opacity: 0;
-        transform: scale(1.1);
-    }
-    .project-content {
-        opacity: 1;
-    }
-}
 
 
 .project-image img {
