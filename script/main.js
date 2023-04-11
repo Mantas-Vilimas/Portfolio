@@ -5,6 +5,12 @@ const header = document.querySelector("header");
 
 let menuOpen = false;
 
+const alert = () => {
+  alert(
+    "Currently working on this project. Sorry that you have to see unfinished product"
+  );
+};
+
 burgerBtn.addEventListener("click", function () {
   if (!menuOpen) {
     burgerBtn.classList.add("open");
