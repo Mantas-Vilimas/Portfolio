@@ -11,6 +11,8 @@ const alert = () => {
   );
 };
 
+alert();
+
 burgerBtn.addEventListener("click", function () {
   if (!menuOpen) {
     burgerBtn.classList.add("open");
